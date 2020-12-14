@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <iframe src="https://wanted5games.com/games/html5/dunk-shot-new-en-s-iga-cloud/index.html?pub=10" name="cloudgames-com" width="500" height="704" frameborder="0" scrolling="no"></iframe>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <!-- Play.iDevGames.co.uk Responsive Embed Code for Amoeba Online -->
+<script>
+    window.onload = function() {
+        var thegamelink = "https://play.idevgames.co.uk/embed/amoeba-online";
+        var ref = document.referrer;
+        var theurl = document.referrer;
+        ref = ref.substring(ref.indexOf("://") + 3);
+        ref = ref.split("/")[0];
+        if(ref == "my-ga.me"){
+        theurl = "true"
+        } else {
+            theurl = "false"
+        } 
+        document.getElementById("embededGame").src = thegamelink+"/"+theurl+"?url="+window.location.href;
+    }
+</script>
+<div style="position: relative;height: 0;overflow: hidden;padding-bottom: 56.25%;">
+    <iframe id="embededGame" src="https://play.idevgames.co.uk/embed/amoeba-online" scrolling="no" seamless="seamless" frameBorder="0" style="position: absolute;top:0;left: 0;width: 100%;height: 100%;">Browser not compatible.</iframe>
+</div>
+<!-- End Embed Code -->
     <script src="script.js"></script>
   </body>
 </html>
